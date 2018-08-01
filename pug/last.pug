@@ -1,0 +1,16 @@
+mixin knows(p, cl)
+    .col-md-4.col-sm-6
+        //- .knowledge
+        .knowledge_container
+            .knowledge_img(class= cl)
+            p.knowledge= p
+section#last
+    .container
+        h3 Благодаря этому вебинару вы узнаете:
+        .row#know
+            +knows('Как формируются людские типажи, формировании судьбы, относительно типажа', 'knowledge_img_first')
+            +knows('Истинные причины, мешающие семейному счастью', 'knowledge_img_second')
+            +knows('По каким критериям мы выбираем вторую половинку, но потом именно в этих критериях и разочаровываемся', 'knowledge_img_third')
+            +knows('Стоит ли уходить от партнера или может стоить потерпеть, изменится ли судьба при  смене партнера', 'knowledge_img_fourth')
+            +knows('Как быть второй половинкой, которую в паре уважают, с которой считаются', 'knowledge_img_fifth')
+            +knows('По судьбе или по карме с вами ваш партнер, что вас с ним ждет в будущем', 'knowledge_img_sixth')
