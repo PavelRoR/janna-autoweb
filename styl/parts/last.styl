@@ -49,3 +49,149 @@
     color: rgb(60, 68, 87);
     line-height: 1.5;
     padding-left: 20px
+
+#myModalForm
+    .modal-dialog
+        width: 465px;
+    .modal-content
+        background-color: #F3F7FF
+        border none
+.mail
+    display block
+    margin 40px auto 0
+    display: block;
+    width: 300px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: none;
+    box-shadow: 0 2px 4px 2px rgba(0,0,0,.1);
+    border-radius: 3px;
+.button_mail
+    display block
+    margin 20px auto 0
+    &:hover
+        box-shadow: 0px 10px 18.86px 4.14px rgba(0, 0, 0, 0.12);
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+    padding-top: 10px
+	font-family: 'RobotoRegular', sans-serif;
+	color: red;
+}
+.checking {
+	display: table;
+	max-width: 90%;
+	margin: 20px auto 0;
+	text-align: left;
+}
+
+.checking .check_label {
+	font-size: 11px;
+	font-family: "RobotoRegular", sans-serif;
+	color: #000
+	line-height: 22px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 30px;
+	text-align: left
+}
+
+.checking .check_label a {
+	color: #000
+	text-decoration: underline
+}
+
+.checking .check_label:before {
+	content: '';
+	border-radius: 2px;
+	background-color: #aaa;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 22px;
+	height: 22px;
+
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: -15px;
+	width: 18px;
+	height: 18px;
+	left: 3px;
+	top: -30px;
+	width: 16px;
+	height: 26px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #ED6F9E
+	border-right: 3px solid #ED6F9E
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + label:before {
+	border: 1px solid #c4c4c4;
+	background-color: #fff;
+
+}
+
+.check:checked + label:after {
+	opacity: 1;
+	top: -10px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+@-webkit-keyframes autofill {
+	to {
+		color: rgba(29, 28, 24, 0.702);
+		background: #f7f8fa;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+button.close
+    font-size: 30px
+    top: 10px
+    right 15px
+    position: absolute
+    float: none
+    margin 0
+    z-index 99
+#myPolitics
+    .modal-title
+        font-size: 20px
+        font-family: 'Intro', sans-serif
+        small
+            display block
+    .modal-body
+        p
+            font-size: 16px
+            margin-bottom: 20px
