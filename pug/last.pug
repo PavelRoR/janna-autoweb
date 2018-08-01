@@ -1,7 +1,7 @@
-mixin knows(p, cl)
+mixin knows(p, cl, cl_2)
     .col-md-4.col-sm-6
         //- .knowledge
-        .knowledge_container
+        .knowledge_container(class= cl_2)
             .knowledge_img(class= cl)
             p.knowledge= p
 section#last
@@ -13,4 +13,4 @@ section#last
             +knows('По каким критериям мы выбираем вторую половинку, но потом именно в этих критериях и разочаровываемся', 'knowledge_img_third')
             +knows('Стоит ли уходить от партнера или может стоить потерпеть, изменится ли судьба при  смене партнера', 'knowledge_img_fourth')
             +knows('Как быть второй половинкой, которую в паре уважают, с которой считаются', 'knowledge_img_fifth')
-            +knows('По судьбе или по карме с вами ваш партнер, что вас с ним ждет в будущем', 'knowledge_img_sixth')
+            +knows('По судьбе или по карме с вами ваш партнер, что вас с ним ждет в будущем', 'knowledge_img_sixth', 'knowledge_container_last')
